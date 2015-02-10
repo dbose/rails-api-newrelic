@@ -9,6 +9,7 @@ module RailsAPINewrelic
       include NewRelic::Agent::Instrumentation::ControllerInstrumentation
       include NewRelic::Agent::Instrumentation::Rails3::ActionController
       include NewRelic::Agent::Instrumentation::Rails3::Errors
+      extend NewRelic::Agent::MethodTracer
     end
 
   end
@@ -22,6 +23,7 @@ module RailsAPINewrelic
       include NewRelic::Agent::Instrumentation::ControllerInstrumentation
       include NewRelic::Agent::Instrumentation::Rails4::ActionController
       include NewRelic::Agent::Instrumentation::Rails4::Errors
+      extend NewRelic::Agent::MethodTracer
     end
 
   end
