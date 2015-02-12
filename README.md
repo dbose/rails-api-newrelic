@@ -1,3 +1,6 @@
+# Update
+Didn't work out of the box for custom tracing using `trace_execution_scoped`. Have to add MethodTracer at appropriate places.
+
 # RailsAPINewrelic (Rails 3 and 4)
 
 This gem fixes New Relic reporting from
